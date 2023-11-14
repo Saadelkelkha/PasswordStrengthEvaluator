@@ -18,9 +18,7 @@ def NbCMaj(p):
 def NbCAlpha(p):
     a = 0
     for i in range(len(p)):
-        if ord("A") <= ord(p[i]) <= ord("Z") or ord("a") <= ord(p[i]) <= ord("z"):
-            g = 0
-        else:
+        if not(ord("A") <= ord(p[i]) <= ord("Z")) and (not(ord("a") <= ord(p[i]) <= ord("z"))):
             a += 1
     return a
 
